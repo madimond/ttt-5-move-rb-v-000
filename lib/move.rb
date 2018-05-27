@@ -1,5 +1,5 @@
 #board
-#require "pry"
+require "pry"
 board = Array.new(9, " ")
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
@@ -17,6 +17,6 @@ end
 
 # move
 def move (board, input, player = "X")
-#binding.pry
+binding.pry
 board[input] = player
 end
